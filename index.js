@@ -33,16 +33,29 @@ function longPlaneteerCalls(words) {
 }
 
 function findTheCheese (foods) {
+  //loops through each cheese element to match 
   
   var cheese = ["cheddar", "gouda", "camembert"];
   var arr = [];
   
   for (var i = 0; i<cheese.length; i++){
-    if(foods.indexOf(cheese[i]) >= 0){
+    if(foods.indexOf(cheese[i]) > 0){
       return arr += cheese[i];
     } else {
       return "no cheese!";
     }
+   }
+}
+
+function wordsWithB(words){
+  var bwords = [];
+  
+  for (var i = 0; i < words.length; i++){
+    if (words[i].startsWith("b")){
+      bwords.push(words[i]);
+    }
   }
+
+  return bwords;
   
 }
